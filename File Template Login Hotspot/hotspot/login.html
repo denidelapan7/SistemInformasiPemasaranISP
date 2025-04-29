@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PT. Solusi Trimegah Persada</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500i,700%7CRoboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="plugins\swiper\swiper.min.css">
+    <link rel="stylesheet" href="plugins\magnific-popup\magnific-popup.min.css">
+    <link rel="stylesheet" href="plugins\color-switcher\color-switcher.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\responsive.css">
+    <link rel="stylesheet" href="css\colors\theme-color-1.css">
+    <link rel="stylesheet" href="css\custom.css">
+</head>
+<body>
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+    <script type="text/javascript" src="/md5.js"></script>
+    <script type="text/javascript">
+    <!--
+        function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+        document.sendin.submit();
+        return false;
+        }
+    //-->
+    </script>
+    $(endif)
+	 <!-- Home Dasboard -->
+    <div class="preLoader"></div>
+    
+    <section class="position-relative bg-light pt-4 pb-4">
+        <div id="particles_js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner-content">
+                        <h1 data-animate="fadeInUp" data-delay="1.2">Internet Service Provider</h1>
+                        <h2 data-animate="fadeInUp" data-delay="1.3"><span class="typed"></span></h2>
+                        <h4 data-animate="fadeInUp" data-delay="1.4">Selamat datang di layanan PT. SOLUSI TRIMEGAH PERSADA</h4></br>
+                    </div>
+                    <div class="card-block py-lg px-md" data-animate="fadeInUp" data-delay="1.4">
+                        <form id="loginForm" class="md-form form-light" role="form" action="$(link-login-only)" method="post">
+                            <input type="hidden" name="dst" value="$(link-orig)"/>
+                            <input type="hidden" name="popup" value="true"/>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="inputUser" class="form-label">Username</label>
+                                        <div class="md-form-line-wrap">
+                                            <input id="inputUser" type="text" name="username" placeholder="username" class="form-control" autofocus required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                        <div class="md-form-line-wrap">
+                                            <input id="inputPassword" type="password" name="password" placeholder="password" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        $(if error)
+                                            <p>Terjadi kesalahan: $(error)</p>
+                                        $(endif)
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group mb-0">
+                                        <button type="submit" class="btn btn-block btn-primary"><span class="btn-elem-wrap"><span class="text">LOGIN</span></span></button><span style="display: none;" class="form-notify help-block mb-0"></span>
+                                    </div> 
+                                </div>
+								</form>
+								<ul>
+					$(if trial == 'yes')Uji coba gratis tersedia, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">klik disini</a>.$(endif)
+					$(if error)<br /><div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)
+					</ul>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <div style="font-size: 10px" align=center>Powered by PT. Solusi Trimegah Persada</div>                           
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="pt-7 pb-5-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-feature text-center" data-animate="fadeInUp" data-delay=".1"> <img src="img\icons\vpn.svg" alt="" data-no-retina="" class="svg">
+                        <h3>Internet super cepat</h3>
+                        <p>Layanan internet super cepat, unlimited dan murah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature text-center" data-animate="fadeInUp" data-delay=".3"> <img src="img\icons\support.svg" alt="" data-no-retina="" class="svg">
+                        <h3>24/7 Technical Support</h3>
+                        <p>Layanan support 24/7 Khusus Layanan Dedicated.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature text-center" data-animate="fadeInUp" data-delay=".5"> <img src="img\icons\guarantee.svg" alt="" data-no-retina="" class="svg">
+                        <h3>SLA 98% </h3>
+                        <p>Service Level Agreement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer class="main-footer bg-primary pt-2">
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-md-12">
+                    <div class="footer-info">
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <a href="#"> <i class="fas fa-arrow-up"></i></a>
+    </div>
+    <script src="js\jquery-3.2.1.min.js"></script>
+    <script src="js\fontawesome-all.min.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="plugins\typed.js\typed.min.js"></script>
+    <script src="plugins\waypoints\jquery.waypoints.min.js"></script>
+    <script src="plugins\waypoints\sticky.min.js"></script>
+    <script src="plugins\swiper\swiper.min.js"></script>
+    <script src="plugins\particles.js\particles.min.js"></script>
+    <script src="plugins\particles.js\particles.settings.js"></script>
+    <script src="plugins\magnific-popup\jquery.magnific-popup.min.js"></script>
+    <script src="plugins\parsley\parsley.min.js"></script>
+    <script src="plugins\parallax\parallax.min.js"></script>
+    <script src="plugins\retinajs\retina.min.js"></script>
+    <script src="js\menu.min.js"></script>
+    <script src="js\scripts.js"></script>
+    <script src="js\custom.js"></script>
+    <script type="text/javascript">
+	</script>
+	
+<!-- Live Chat WA-->
+ <style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="http://192.168.1.39/livechat/chat.php" class="float" target="_blank">
+<span style="font-size: 20px" class="text-center">Live Chat </span></span>
+</a>
+</script>
+    $(if chap-id)
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript">
+        $('#loginForm').submit(function () {
+            var password = $('#inputPassword');
+            password.val(hexMD5('$(chap-id)' + password.val() + '$(chap-challenge)'));
+        });
+    </script>
+    $(endif)
+    <script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script type="text/javascript">
+    <!--
+    document.login.username.focus();
+    //-->
+    </script>
+	
+</body>
+
+</html>
